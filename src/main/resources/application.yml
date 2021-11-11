@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: booktracker
+  
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: Iv1.9e15a570a9a40582
+            client-secret: 86f0ca7b81cc0fe1db0c223391f5243429027024
+
+  data:
+    cassandra:
+      keyspace-name: main
+      username: EeNweaYlTicqAJJZnyZDyemK
+      password: eJZox_RKl7JxoaMIB3IEdSmTs_ZimCJMkK7,KWnsX228LspfLvWnqCRShEEjT+mmdO1tdavQx806,7_-Qq9KRC.667KPQp8316Wc758_Uh8HmZfhy--wrTZo,5I.R-A5
+      schema-action: create-if-not-exists
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+
+datastax.astra:
+    secure-connect-bundle: secure-connect.zip
+
+astra.db:
+    id: 674e4f9e-0161-4203-968f-445ac65dee86-1
+    region: eu-central-1
+    keyspace: main
+    application.token: AstraCS:EeNweaYlTicqAJJZnyZDyemK:9babc7bf69728e5e2bb5fe7ffc23ed2bc226703ed75a61dd97387a0530918e03           
+
+
+
